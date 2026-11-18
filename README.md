@@ -81,7 +81,7 @@ Prepare the initialization checkpoints listed in [weights/README.md](weights/REA
 # nuScenes: Lite-Mono, 640×384, 30 epochs
 NUSCENES_TRAIN_PATH=/path/to/nuscenes/training bash scripts/train_nuscenes.sh
 
-# KITTI Odometry: Lite-Mono-8m, 640×192, resume from weights_4
+# KITTI Odometry: Lite-Mono-8m, 640×192, resume from the supplied initialization
 KITTI_ODOM_PATH=/path/to/kitti_odom bash scripts/train_kitti_odom.sh
 ```
 
@@ -93,7 +93,7 @@ KITTI_ODOM_PATH=/path/to/kitti_odom bash scripts/train_kitti_odom.sh --batch_siz
 
 Training outputs are saved under `tmp/<model_name>/`, including TensorBoard events and `models/weights_<epoch>/`. KITTI Odometry also evaluates sequences 09/10 every 1,000 updates and after each epoch, using `KITTI_ODOM_PATH/poses/` as ground truth. Use `--eval_dataset none --eval_frequency 0` to disable this evaluation, or specify `--eval_data_path` and `--gt_path` for separate evaluation data.
 
-For resuming, `weights_4` starts at epoch 5 (zero-based); `--num_epochs 30` is the total target epoch count. `--resume_epoch` explicitly overrides the starting epoch. Full resume checkpoints include both model and optimizer states. The inference-only checkpoints below are not full training checkpoints.
+The KITTI initialization files are placed directly in `weights/initialization/kitti_odom_pt/`. The script explicitly sets `--resume_epoch 5` (zero-based); `--num_epochs 30` is the total target epoch count. `--resume_epoch` explicitly overrides the starting epoch. Full resume checkpoints include both model and optimizer states. The inference-only checkpoints below are not full training checkpoints.
 
 **Training configuration:** these scripts retain the supplied implementation's settings, including RAFT-KITTI initialization, the existing geometric-loss schedule, pseudo-depth normal supervision for nuScenes, and KITTI's supplied epoch-4 initialization. These settings differ from the paper's description of FlyingChairs initialization and its 5/10/15-epoch progressive schedule. A complete retraining comparison against the released checkpoints remains to be verified; the scripts should not be treated as a verified from-scratch recipe for the paper's numbers.
 
