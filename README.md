@@ -16,9 +16,9 @@ DiMoDE exploits the geometric regularities of individual motion components to im
 
 ## News
 
-- **2026-11-19:** Check out our new work **[MaSS](https://mias.group/MaSS/)** (NeurIPS 2026)! MaSS disentangles scene structure from context, benefits from **mixed-domain training**, and generalizes to unseen indoor and outdoor scenes. We recommend it as a **strong baseline**, and its evaluation across **four training domains and eight additional zero-shot datasets** as a broader framework for evaluating self-supervised depth estimation. [Paper](https://mias.group/MaSS/assets/paper/mass.pdf) · [Code](https://github.com/mengtanZ/MaSS) · [Model](https://huggingface.co/mengtanZ/MaSS).
-- **2026-11-19:** DiMoDE code and [pretrained models](https://huggingface.co/mengtanZ/DiMoDE) released for nuScenes and KITTI Odometry!
-- **2026-08-24:** DiMoDE accepted by **IEEE T-PAMI**!
+- **2026-11-19:** Check out our new work **[MaSS](https://mias.group/MaSS/)** (NeurIPS 2026)! MaSS explores **cross-domain training and scalable learning** for self-supervised monocular depth estimation. We believe it can serve as a **strong baseline** for future research, while its evaluation suite, covering **four training domains and eight additional zero-shot datasets**, provides a broader framework for benchmarking self-supervised depth estimation methods. [Paper](https://mias.group/MaSS/assets/paper/mass.pdf) · [Code](https://github.com/mengtanZ/MaSS) · [Model](https://huggingface.co/mengtanZ/MaSS).
+- **2026-11-18:** DiMoDE code and [pretrained models](https://huggingface.co/mengtanZ/DiMoDE) are now available for nuScenes and KITTI Odometry!
+- **2026-08-24:** DiMoDE has been accepted for publication in **IEEE T-PAMI**!
 
 ## Table of Contents
 
