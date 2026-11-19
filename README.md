@@ -28,6 +28,7 @@ DiMoDE exploits the geometric regularities of individual motion components to im
   - [Pretrained Models](#pretrained-models)
   - [Acknowledgements](#acknowledgements)
   - [Citation](#citation)
+  - [Contact](#contact)
 
 ## Install
 
@@ -137,3 +138,7 @@ If you find our work useful in your research, please consider citing our paper:
   publisher={IEEE}
 }
 ```
+
+## Contact
+
+If you have any questions, please contact Mengtan Zhang at [zmt200110@tongji.edu.cn](mailto:zmt200110@tongji.edu.cn) or open an [issue](https://github.com/mengtanZ/DiMoDE/issues).
