@@ -51,7 +51,7 @@ Preprocess nuScenes front-camera videos into consecutively numbered JPEG frames,
 | Path | Content |
 | --- | --- |
 | `data/nuscenes/training/scene-XXXX/000000.jpg` | Consecutive training/validation frames |
-| `data/nuscenes/training/scene-XXXX/psedo_depth/000000.png` | Pseudo-depth for the corresponding frame, required by the supplied training command |
+| `data/nuscenes/training/scene-XXXX/psedo_depth/000000.png` | Pseudo-depth for the corresponding frame, required for training; see [SC-DepthV3](https://github.com/JiawangBian/sc_depth_pl#generating-pseudo-depth-for-training-v3) for generation instructions |
 | `data/nuscenes/testing/color/000000.jpg` | Test images, numbered `000000` through `006018` |
 | `data/nuscenes/testing/depth/000000.npy` | Corresponding point-depth array with shape `(N, 3)`: image `x`, image `y`, depth in meters |
 
