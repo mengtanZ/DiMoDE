@@ -14,10 +14,16 @@ DiMoDE exploits the geometric regularities of individual motion components to im
 
 ![Overview of DiMoDE](assets/framework.png)
 
+## News
+
+- **2026-11-19:** Check out our new work **[MaSS](https://mias.group/MaSS/)** (NeurIPS 2026)! MaSS disentangles scene structure from context, benefits from **mixed-domain training**, and generalizes to unseen indoor and outdoor scenes. We recommend it as a **strong baseline**, and its evaluation across **four training domains and eight additional zero-shot datasets** as a broader framework for evaluating self-supervised depth estimation. [Paper](https://mias.group/MaSS/assets/paper/mass.pdf) · [Code](https://github.com/mengtanZ/MaSS) · [Model](https://huggingface.co/mengtanZ/MaSS).
+- **2026-11-19:** DiMoDE code and [pretrained models](https://huggingface.co/mengtanZ/DiMoDE) released for nuScenes and KITTI Odometry!
+- **2026-08-24:** DiMoDE accepted by **IEEE T-PAMI**!
 
 ## Table of Contents
 
 - [DiMoDE: Discriminately Treating Motion Components Evolves Joint Depth and Ego-Motion Learning](#dimode-discriminately-treating-motion-components-evolves-joint-depth-and-ego-motion-learning)
+  - [News](#news)
   - [Table of Contents](#table-of-contents)
   - [Install](#install)
   - [Dataset](#dataset)
