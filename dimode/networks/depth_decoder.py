@@ -1,7 +1,7 @@
-# Adapted for the DiMoDE release; upstream attribution and terms: THIRD_PARTY_NOTICES.md.
+# Adapted for the DiMoDE release; upstream attribution and terms: dimode/THIRD_PARTY_NOTICES.md.
 from __future__ import absolute_import, division, print_function
 from collections import OrderedDict
-from utils.layers import *
+from ..utils.layers import *
 from timm.models.layers import trunc_normal_
 
 

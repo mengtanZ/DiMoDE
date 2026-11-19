@@ -1,4 +1,4 @@
-# Adapted for the DiMoDE release; upstream attribution and terms: THIRD_PARTY_NOTICES.md.
+# Adapted for the DiMoDE release; upstream attribution and terms: dimode/THIRD_PARTY_NOTICES.md.
 import torch
 from torch import nn
 import numpy as np

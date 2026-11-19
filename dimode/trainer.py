@@ -1,4 +1,4 @@
-# Adapted for the DiMoDE release; upstream attribution and terms: THIRD_PARTY_NOTICES.md.
+# Adapted for the DiMoDE release; upstream attribution and terms: dimode/THIRD_PARTY_NOTICES.md.
 from __future__ import absolute_import, division, print_function
 
 import os
@@ -18,22 +18,21 @@ import json
 import cv2
 from tqdm import tqdm
 
-from utils.layers import *
+from .utils.layers import *
 
-import datasets
-import networks
-from networks.RAFT.raft import RAFT
-from linear_warmup_cosine_annealing_warm_restarts_weight_decay import ChainedScheduler
+from . import datasets, networks
+from .networks.RAFT.raft import RAFT
+from .linear_warmup_cosine_annealing_warm_restarts_weight_decay import ChainedScheduler
 
-from losses.normal_ranking_loss import EdgeguidedNormalRankingLoss
+from .losses.normal_ranking_loss import EdgeguidedNormalRankingLoss
 
 import re
 
 import random
 import numpy as np
 
-from utils.utils import *
-from utils.runtime import get_device
+from .utils.utils import *
+from .utils.runtime import get_device
 
 seed = 640
 random.seed(seed)
@@ -791,7 +790,7 @@ class Trainer:
 
         gt_dir = self.opt.gt_path or os.path.join(
             self.opt.eval_data_path or self.opt.data_path, "poses")
-        from utils.kitti_odom_eval.kitti_odometry import KittiEvalOdom
+        from .utils.kitti_odom_eval.kitti_odometry import KittiEvalOdom
         KittiEvalOdom().eval(gt_dir, result_dir, alignment="7dof", seqs=[9, 10])
 
     def log_time(self, batch_idx, duration, loss, D_loss, t_loss, p_loss):

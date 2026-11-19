@@ -12,6 +12,8 @@
 *.rar
 /weights/*
 !/weights/README.md
+/dimode/weights/*
+!/dimode/weights/README.md
 
 # Private datasets, generated predictions, training logs and local validation.
 /data/
@@ -22,10 +24,10 @@
 /outputs/
 /pred_depth/
 /vis_result/
-/tests/
-/validation/
+tests/
+validation/
 /local/
-/local_checks/
+local_checks/
 *.private.*
 *.npy
 *.npz

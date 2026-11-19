@@ -2,7 +2,7 @@
 # Modified for DiMoDE: explicit data/output paths and a guarded CLI entry point.
 import argparse
 from pathlib import Path
-from kitti_odometry import KittiEvalOdom
+from .kitti_odometry import KittiEvalOdom
 
 
 if __name__ == '__main__':

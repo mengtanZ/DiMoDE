@@ -1,4 +1,4 @@
-# Adapted for the DiMoDE release; upstream attribution and terms: THIRD_PARTY_NOTICES.md.
+# Adapted for the DiMoDE release; upstream attribution and terms: dimode/THIRD_PARTY_NOTICES.md.
 from __future__ import absolute_import, division, print_function
 
 import torch

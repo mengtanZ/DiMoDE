@@ -7,12 +7,12 @@ import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-import networks
-from datasets import KITTIOdomDataset
-from options import Options
-from utils.layers import transformation_from_parameters
-from utils.runtime import get_device, output_directory
-from utils.utils import readlines
+from . import networks
+from .datasets import KITTIOdomDataset
+from .options import Options
+from .utils.layers import transformation_from_parameters
+from .utils.runtime import get_device, output_directory
+from .utils.utils import readlines
 
 
 def evaluate(opt):

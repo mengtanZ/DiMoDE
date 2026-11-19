@@ -8,12 +8,11 @@ import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-import datasets
-import networks
-from options import Options
-from utils.layers import disp_to_depth
-from utils.runtime import get_device, output_directory
-from utils.utils import readlines
+from . import datasets, networks
+from .options import Options
+from .utils.layers import disp_to_depth
+from .utils.runtime import get_device, output_directory
+from .utils.utils import readlines
 
 cv2.setNumThreads(0)
 
