@@ -17,7 +17,7 @@ DiMoDE exploits the geometric regularities of individual motion components to im
 ## News
 
 - **2026-11-19:** Check out our new work **[MaSS](https://mias.group/MaSS/)** (NeurIPS 2026)! MaSS explores **cross-domain training and scalable learning** for self-supervised monocular depth estimation. We believe it can serve as a **strong baseline** for future research, while its evaluation suite, covering **four training domains and eight additional zero-shot datasets**, provides a broader framework for benchmarking self-supervised depth estimation methods. [Paper](https://mias.group/MaSS/assets/paper/mass.pdf) · [Code](https://github.com/mengtanZ/MaSS) · [Model](https://huggingface.co/mengtanZ/MaSS).
-- **2026-11-18:** DiMoDE code and [pretrained models](https://huggingface.co/mengtanZ/DiMoDE) are now available for nuScenes and KITTI Odometry!
+- **2026-11-18:** DiMoDE code and [pretrained models](https://huggingface.co/mengtanZ/DiMoDE) are now available!
 - **2026-08-24:** DiMoDE has been accepted for publication in **IEEE T-PAMI**!
 
 ## Table of Contents
@@ -147,4 +147,4 @@ If you find our work useful in your research, please consider citing our paper:
 
 ## Contact
 
-If you have any questions, please contact Mengtan Zhang at [zmt200110@tongji.edu.cn](mailto:zmt200110@tongji.edu.cn) or open an [issue](https://github.com/mengtanZ/DiMoDE/issues).
+If you have any questions, please contact me at [zmt200110@tongji.edu.cn](mailto:zmt200110@tongji.edu.cn) or open an [issue](https://github.com/mengtanZ/DiMoDE/issues).
