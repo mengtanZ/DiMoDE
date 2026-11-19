@@ -1,4 +1,4 @@
-# Python 3.9; versions taken from the author's dcpi_depth_env.
+# Python 3.9.
 # Install torch 2.0.1+cu117 and torchvision 0.15.2+cu117 separately (README).
 numpy==1.26.4
 Pillow==11.3.0
